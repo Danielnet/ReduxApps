@@ -6,7 +6,7 @@ import Header from './components/Header'
 import { connect } from 'react-redux'
 
 
-//rcc
+
 class ReduxDemo extends Component {
   render() {
     return (

@@ -5,25 +5,24 @@ import ReduxDemo from './App'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import { todos } from './reducers/reducers'
-import {dateObj} from './components/date'
+import { dateObj } from './components/date'
 
 
 const defaultState = {
-    todoList:[
-    {date:dateObj(), text: 'Add redux state dev tool', completed: true},
-    {date:dateObj(), text: 'Redux Thunk middleware', completed: false},
-    {date:dateObj(), text: 'store data to local', completed: false},
-    {date:dateObj(), text: 'Upload to heroku', completed: false},
-    {date:dateObj(), text: 'Proptypes', completed: false},
-    {date:dateObj(), text: 'Dev-Dependencies', completed: false},
-    {date:dateObj(), text: 'Prop-Types : Todo , TodoList', completed: false},
-],
-globalEditMode:false,
-newValue:''
+    todoList: [
+        { date: dateObj(), text: 'Add redux state dev tool', completed: true },
+        { date: dateObj(), text: 'Redux Thunk middleware', completed: false },
+        { date: dateObj(), text: 'Store data to local', completed: false },
+        { date: dateObj(), text: 'Upload to heroku', completed: false },
+        { date: dateObj(), text: 'Proptypes', completed: false },
+        { date: dateObj(), text: 'Dev-Dependencies', completed: false },
+    ],
+    globalEditMode: false,
+    newValue: ''
 }
 
 
-const store = createStore(todos, defaultState,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+const store = createStore(todos, defaultState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 //setInterval(function(){ console.log(store.getState()); }, 10000);
 ReactDOM.render(
