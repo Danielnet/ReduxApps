@@ -1,0 +1,77 @@
+*{
+  box-sizing: border-box;
+  font-weight: 300;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+ 
+}
+
+body{
+  background:black;
+
+}
+
+
+.App {
+margin:70px auto;
+width:600px;
+padding:30px;
+background:white;
+}
+
+
+
+.headerButton{
+padding:5px;
+margin-left:10px;
+}
+
+ul{
+  padding:0px;
+}
+
+
+.todoContainer{
+  display:flex;
+  align-content:stretch;
+  margin:10px auto;
+}
+
+.todo{
+  width:100%;
+padding:5px;
+list-style-type:none;
+font-weight: 400;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+margin-left: 10px;
+}
+
+.todo:hover{
+  color:green!important;
+  cursor:pointer;
+}
+
+.todoButtons{
+right:0px;
+display:flex;
+justify-content:flex-end;
+}
+
+@media (max-width: 600px){
+  .todoContainer{
+    display:inherit;
+    border-bottom:1px solid grey;
+    padding-bottom:20px;
+  }
+  .App {
+    width:100%;
+    }
+    .todo{
+    margin-left: 0px;
+
+    }
+}
